@@ -1,0 +1,8 @@
+[[buildpacks]]
+  uri = "https://github.com/heroku/heroku-buildpack-php"
+
+[[buildpacks]]
+  uri = "https://github.com/heroku/heroku-buildpacks-procfile"
+
+[stack]
+  id = "heroku-20"
