@@ -1,8 +1,8 @@
 <?php
 // POST 요청으로부터 데이터를 받아옵니다.
-$input = $_POST['input'];
+// $input = $_POST['input'];
 
-// 값 예시: $input = "38d481a6f2a7411386723eaa5c50f480";
+$input = "38d481a6f2a7411386723eaa5c50f480";
 // 이 아래는 수정할 필요 없음
 
 function convertToUUID($string) {
