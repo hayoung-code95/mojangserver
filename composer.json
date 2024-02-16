@@ -1,1 +1,19 @@
-{}
+{
+  "name": "my-project",
+  "description": "My project description",
+  "version": "1.0.0",
+  "autoload": {
+    "files": [
+      "update.php",
+      "WebsenderAPI.php"
+    ]
+  },
+  "dependencies": {
+    "package1": "^1.0.0",
+    "package2": "^2.0.0"
+  },
+  "devDependencies": {
+    "package3": "^3.0.0",
+    "package4": "^4.0.0"
+  }
+}
