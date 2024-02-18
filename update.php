@@ -16,7 +16,7 @@ if(!empty($_GET['input']))
 	}
 	else
 	{
-        echo $input
+        echo $input;
         require_once("WebsenderAPI.php"); // 라이브러리 불러오기
     
         $wsr = new WebsenderAPI("103.124.102.253", "D&2(D#%*3[:]du8&2&", "40403");
