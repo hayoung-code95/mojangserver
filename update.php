@@ -30,7 +30,7 @@ if(!empty($_GET['input']))
         }
     
         $wsr->disconnect(); // 연결 닫기
-		response(200,"Product Found",$price);
+		response(200,"Product Found", $input);
 	}
 	
 }
