@@ -10,25 +10,26 @@ if(!empty($_GET['input']))
 {
 	$input=$_GET['input'];
 	
-	if(empty($price))
+	if(empty($input))
 	{
 		response(200,"Product Not Found",NULL);
+	}
+	else
+	{
+        echo $input
         require_once("WebsenderAPI.php"); // 라이브러리 불러오기
-
+    
         $wsr = new WebsenderAPI("103.124.102.253", "D&2(D#%*3[:]du8&2&", "40403");
         $uuid = convertToUUID($input);
-
+    
         if ($wsr->connect()) { // 연결 열기
             $wsr->sendCommand("trg vars premiumSession $uuid");
             $wsr->sendCommand("trg run #CALL \"updatePremium\"");
         } else {
             echo "오류가 발생했습니다. 게임모드 고객센터로 문의해 주세요.";
         }
-
+    
         $wsr->disconnect(); // 연결 닫기
-	}
-	else
-	{
 		response(200,"Product Found",$price);
 	}
 	
